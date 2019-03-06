@@ -1,66 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+  <body>
+    <header id="masthead">
+      <div class="container">
+        <a href="index.html" id="logo">Brian Ford</a>
+        <nav>
+          <a href="index.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-<body>
+    <div id="main-container" class="container">
+      <section class="main-section">
+        <h1>Portfolio</h1>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+        <div class="work">
+          <img
+            src="data:image/png;base64,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"
+            alt="Hangman"
+          />
+
+          <h3><a href="https://bf2344.github.io/Hangman-Game/">Hangman</a></h3>
+        </div>
+        <div class="work">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQJIXWqBisrTop51PtRFwGgm2AXUSimxABbrDGtIQaSdNk540JzQ"
+            alt="Crystals Game"
+          />
+
+          <h3><a href="https://bf2344.github.io/unit-4-game/">Crystals Game</a></h3>
+        </div>
+        <!-- <div class="work">
+          <img
+            src="assets/images/technics-q-c-640-480-5.jpg"
+            alt="Trivia Game" -->
+          <!-- /> -->
+
+          <!-- <h3>Trivia Game</h3>
+        </div>
+        <div class="work">
+          <img
+            src="assets/images/technics-q-c-640-480-7.jpg"
+            alt="Rutgers Info Widget"
+          />
+
+          <h3>Rutgers Info Widget</h3>
+        </div>
+        <div class="work">
+          <img
+            src="assets/images/technics-q-c-640-480-9.jpg"
+            alt="Rock Paper Scissors"
+          />
+
+          <h3>Rock Paper Scissors</h3> -->
+        </div>
+      </section>
     </div>
-  </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Portfolio</h1>
-
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
-
-        <h3>Word Guess</h3>
+    <footer>
+      <div class="container">
+        Copyright &copy;
       </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-
-        <h3>RPG Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
-
-        <h3>Trivia Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
-
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-
-        <h3>Rock Paper Scissors</h3>
-      </div>
-
-    </section>
-
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy;
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
